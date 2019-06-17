@@ -24,7 +24,7 @@ class DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if currentPage != 0 {
-            self.locationsArray[0].getWeather {
+            self.locationsArray[currentPage].getWeather {
                 self.updateUserInterface()
             }
         }

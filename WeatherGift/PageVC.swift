@@ -81,7 +81,7 @@ class PageVC: UIPageViewController {
     
     //MARK:- Create View Controller for UIPageCiewController
     func createDetailVC(forPage page: Int) -> DetailVC {
-        currentPage = max(max(0, page), locationsArray.count - 1)
+        currentPage = min(max(0, page), locationsArray.count - 1)
         let detailVC = storyboard!.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
         detailVC.locationsArray = locationsArray
         detailVC.currentPage = currentPage
