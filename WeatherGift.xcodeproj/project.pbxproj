@@ -16,6 +16,7 @@
 		A27B730722B67B6200082E94 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B730622B67B6200082E94 /* ListVC.swift */; };
 		A27B730922B67D4A00082E94 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B730822B67D4A00082E94 /* PageVC.swift */; };
 		A2A9753A22B7EDEF00F5CA0B /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A9753922B7EDEF00F5CA0B /* WeatherLocation.swift */; };
+		A2A9753C22B8098100F5CA0B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A9753B22B8098100F5CA0B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A27B730622B67B6200082E94 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		A27B730822B67D4A00082E94 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		A2A9753922B7EDEF00F5CA0B /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
+		A2A9753B22B8098100F5CA0B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B1228CA04AA5E62D8FD388DE /* Pods-WeatherGift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherGift.debug.xcconfig"; path = "Target Support Files/Pods-WeatherGift/Pods-WeatherGift.debug.xcconfig"; sourceTree = "<group>"; };
 		F5FA8B79E04529190A54E6AC /* Pods_WeatherGift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherGift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 				A27B730822B67D4A00082E94 /* PageVC.swift */,
 				A267972E22B3E1BF0078084A /* DetailVC.swift */,
 				A27B730622B67B6200082E94 /* ListVC.swift */,
+				A2A9753B22B8098100F5CA0B /* Constants.swift */,
 				A267972022B3E14F0078084A /* Main.storyboard */,
 				A267972322B3E1500078084A /* Assets.xcassets */,
 				A267972522B3E1500078084A /* LaunchScreen.storyboard */,
@@ -235,6 +238,7 @@
 				A27B730922B67D4A00082E94 /* PageVC.swift in Sources */,
 				A267971D22B3E14F0078084A /* AppDelegate.swift in Sources */,
 				A267972F22B3E1BF0078084A /* DetailVC.swift in Sources */,
+				A2A9753C22B8098100F5CA0B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

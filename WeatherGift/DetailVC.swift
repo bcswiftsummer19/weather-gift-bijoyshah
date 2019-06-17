@@ -23,6 +23,11 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if currentPage != 0 {
+            self.locationsArray[0].getWeather {
+                self.updateUserInterface()
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,6 +40,10 @@ class DetailVC: UIViewController {
     func updateUserInterface() {
         locationLabel.text = locationsArray[currentPage].name
         dateLabel.text = locationsArray[currentPage].coordinates
+        temperatureLabel.text = locationsArray[currentPage].currentTemp
+        print("%%%%% currentTemp inside \(locationsArray[currentPage].currentTemp)")
+        summaryLabel.text = locationsArray[currentPage].currentSummary
+        currentImage.image = UIImage(named: locationsArray[currentPage].currentIcon)
     }
 }
 
@@ -69,8 +78,7 @@ extension DetailVC: CLLocationManagerDelegate {
         currentLocation = locations.last
         let currentLatitude = currentLocation.coordinate.latitude
         let currentLongitude = currentLocation.coordinate.longitude
-        let currentCoordinates = "\(currentLatitude), \(currentLongitude)"
-        print(currentCoordinates)
+        let currentCoordinates = "\(currentLatitude),\(currentLongitude)"
         dateLabel.text = currentCoordinates
         geoCoder.reverseGeocodeLocation(currentLocation, completionHandler: {placemarks, error in
             if placemarks != nil {
@@ -82,7 +90,9 @@ extension DetailVC: CLLocationManagerDelegate {
             }
             self.locationsArray[0].name = place
             self.locationsArray[0].coordinates = currentCoordinates
-            self.updateUserInterface()
+            self.locationsArray[0].getWeather {
+                self.updateUserInterface()
+            }
         })
     }
     
