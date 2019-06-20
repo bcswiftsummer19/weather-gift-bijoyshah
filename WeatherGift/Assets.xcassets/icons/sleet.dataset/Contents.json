@@ -5,12 +5,8 @@
   },
   "data" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "sleet.svg",
-      "unassigned" : true
+      "filename" : "sleet.svg"
     }
   ]
 }

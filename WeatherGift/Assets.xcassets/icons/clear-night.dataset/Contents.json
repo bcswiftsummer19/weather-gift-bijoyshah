@@ -5,12 +5,8 @@
   },
   "data" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "clear-night.svg",
-      "unassigned" : true
+      "filename" : "clear-night.svg"
     }
   ]
 }

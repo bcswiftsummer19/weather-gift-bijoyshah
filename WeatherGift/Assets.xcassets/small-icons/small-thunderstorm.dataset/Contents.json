@@ -5,12 +5,8 @@
   },
   "data" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "small-thunderstorm.svg",
-      "unassigned" : true
+      "filename" : "small-thunderstorm.svg"
     }
   ]
 }

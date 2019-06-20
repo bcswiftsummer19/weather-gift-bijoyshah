@@ -5,12 +5,8 @@
   },
   "data" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "snow.svg",
-      "unassigned" : true
+      "filename" : "snow.svg"
     }
   ]
 }

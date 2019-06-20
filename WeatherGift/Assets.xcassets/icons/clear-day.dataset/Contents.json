@@ -5,12 +5,8 @@
   },
   "data" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "clear-day.svg",
-      "unassigned" : true
+      "filename" : "clear-day.svg"
     }
   ]
 }

@@ -5,12 +5,8 @@
   },
   "data" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "wind.svg",
-      "unassigned" : true
+      "filename" : "wind.svg"
     }
   ]
 }

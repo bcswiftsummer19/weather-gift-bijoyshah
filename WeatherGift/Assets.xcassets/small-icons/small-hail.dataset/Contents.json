@@ -5,12 +5,8 @@
   },
   "data" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "small-hail.svg",
-      "unassigned" : true
+      "filename" : "small-hail.svg"
     }
   ]
 }

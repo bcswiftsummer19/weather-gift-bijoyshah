@@ -5,12 +5,8 @@
   },
   "data" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "rain.svg",
-      "unassigned" : true
+      "filename" : "rain.svg"
     }
   ]
 }

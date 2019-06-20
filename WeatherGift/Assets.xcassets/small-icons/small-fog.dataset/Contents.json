@@ -5,12 +5,8 @@
   },
   "data" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "small-fog.svg",
-      "unassigned" : true
+      "filename" : "small-fog.svg"
     }
   ]
 }

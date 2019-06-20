@@ -5,12 +5,8 @@
   },
   "data" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "small-rain.svg",
-      "unassigned" : true
+      "filename" : "small-rain.svg"
     }
   ]
 }
