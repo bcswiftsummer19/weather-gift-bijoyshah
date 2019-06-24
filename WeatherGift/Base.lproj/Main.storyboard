@@ -21,11 +21,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ok-cT-yES">
                                 <rect key="frame" x="0.0" y="44" width="414" height="275"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0LV-cA-51h">
-                                        <rect key="frame" x="0.0" y="0.0" width="184" height="275"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h3-7c-6g0">
                                         <rect key="frame" x="192" y="8" width="214" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
@@ -54,6 +49,11 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0LV-cA-51h">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="275"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -61,7 +61,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K4G-VG-GPH">
-                                <rect key="frame" x="0.0" y="421" width="414" height="415"/>
+                                <rect key="frame" x="0.0" y="421" width="414" height="413"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DayWeatherCell" rowHeight="80" id="5HV-0B-5ca" customClass="DayWeatherCell" customModule="WeatherGift" customModuleProvider="target">
@@ -121,17 +121,17 @@
                                     <constraint firstAttribute="height" constant="95" id="vDT-Cy-DLQ"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="62Z-dd-9Fn">
-                                    <size key="itemSize" width="95" height="95"/>
+                                    <size key="itemSize" width="100" height="95"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HourlyCell" id="1Xd-Ig-YKq">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HourlyCell" id="1Xd-Ig-YKq" customClass="HourlyWeatherCell" customModule="WeatherGift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAR-wq-xW7">
@@ -152,7 +152,7 @@
                                                     <rect key="frame" x="24" y="24" width="46" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="HZt-8V-dKg">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="raindrop" translatesAutoresizingMaskIntoConstraints="NO" id="HZt-8V-dKg">
                                                     <rect key="frame" x="80" y="20" width="15" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -165,6 +165,13 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="hourlyIcon" destination="hPL-el-tXb" id="VM4-Wb-kvR"/>
+                                            <outlet property="hourlyPrecipProb" destination="1FQ-VF-GDP" id="WeO-3e-T0e"/>
+                                            <outlet property="hourlyTemp" destination="WG5-3K-L9h" id="Ih6-gB-bVl"/>
+                                            <outlet property="hourlyTime" destination="YAR-wq-xW7" id="Nqd-91-Imh"/>
+                                            <outlet property="rainDropImage" destination="HZt-8V-dKg" id="fmd-9S-4eC"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -173,7 +180,7 @@
                         <constraints>
                             <constraint firstItem="9Ok-cT-yES" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0eZ-46-dKP"/>
                             <constraint firstItem="9Ok-cT-yES" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="39T-b0-K8D"/>
-                            <constraint firstItem="K4G-VG-GPH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-26" id="7yd-eN-41z"/>
+                            <constraint firstItem="K4G-VG-GPH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-28" id="7yd-eN-41z"/>
                             <constraint firstItem="eQe-Td-20n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KGu-ZN-Cwc"/>
                             <constraint firstItem="9Ok-cT-yES" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WJY-3Q-EY3"/>
                             <constraint firstItem="eQe-Td-20n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="274" id="aW0-0c-V8L"/>
@@ -277,7 +284,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="18" height="20"/>
+        <image name="raindrop" width="18" height="20"/>
         <image name="sad_cloud_dark.png" width="144" height="96"/>
     </resources>
 </document>
